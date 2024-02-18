@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDS GAME</title>
+
+    <link rel="icon" type="image/x-icon" href="images/avatars/avatar1.png">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo/cardLogo.png"></a>
+        <h1>FRUIT CARD GAME</h1>
+    </header>
+    <main>
+        <div>
+            <p id="error"></p>
+        </div>
+        
+        <form action="game.html" id="form">
+            <div class="item-form">
+                <label for="nick">nickname:</label>
+                <input type="text" name="nick" id="nickarr" value="@" readonly>
+                <input type="text" name="nick" id="nick">
+            </div>
+            <div class="item-form">
+                <label for="dif">dificultad:</label>
+                <select name="dif" id="dif">
+                    <option value="0">Seleccione una dificultad</option>
+                    <option value="3">Fácil</option>
+                    <option value="5">Normal</option>
+                    <option value="7">Difícil</option>
+                </select>
+            </div>
+
+            <div class="item-form">
+                <div id="avatar">
+                    <p>escoge tu avatar</p>
+                    <div id="avatarContainer">
+                        <img id="avatarImage" src="images/avatars/avatar1.png" alt="Avatar Image">
+                    </div>
+                </div>
+                <div id="avatarOptions">
+                    <div class="avatar-item">
+                        <img src="images/avatars/avatar1.png" class="avatar-image-item" draggable="true" width="50px" alt="">
+                    </div>
+
+                    <div class="avatar-item">
+                        <img src="images/avatars/avatar2.png" class="avatar-image-item" draggable="true" width="50px" alt="">
+                    </div>
+                
+                    <div class="avatar-item">
+                        <img src="images/avatars/avatar3.png" class="avatar-image-item" draggable="true" width="50px" alt="">
+                    </div>
+
+                    <div class="avatar-item">
+                        <img src="images/avatars/avatar4.png" class="avatar-image-item" draggable="true" width="50px" alt="">
+                    </div>
+
+                    <div class="avatar-item">
+                        <img src="images/avatars/avatar5.png" class="avatar-image-item" draggable="true" width="50px" alt="">
+                    </div>
+
+                    <div class="avatar-item">
+                        <img src="images/avatars/avatar6.png" class="avatar-image-item" draggable="true" width="50px" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-form">
+                <input type="submit" id="btnSubmit" value="Jugar">
+            </div>
+        </form>
+    </main>
+    <script src="js/userData.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
