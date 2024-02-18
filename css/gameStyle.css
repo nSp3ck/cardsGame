@@ -1,0 +1,202 @@
+/*
+* Importing fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+*variables
+*/
+
+:root{
+    --main-color: #94d10f;
+    --better-white: #f2f2f2;
+}
+
+/*reset*/
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+/*
+*
+* GENERAL STYLES
+*
+*/
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 30px auto 0px auto;
+    width: 80%;
+}
+
+header img{
+    width: 100px;
+}
+
+/*Fonts*/
+body, label, input, select{
+    font-family: 'Nunito', sans-serif;
+}
+
+/*
+*
+* MAIN STYLES
+*
+*/
+
+/*form*/
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/*Inputs and labels*/
+label{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input, select{
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #d8d8d8;
+    font-size: 1rem;
+}
+
+/*User Data*/
+#userContainer{
+    width: 190px;
+}
+
+#nickarr{
+    float: left;
+    width: 40px;
+    text-align: center;
+    background-color: #d8d8d8;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#nick{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 150px;
+}
+/*
+* GAME
+*/
+
+.container-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 75px;
+    min-height: 75px;
+    border: 3px solid #94d10f;
+    border-radius: 5px;
+    transition: all 250ms ease;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.flip::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #94d10f;
+    position: absolute;
+    display: block;
+}
+
+#gameCont{
+    width: 900px;
+}
+
+#game{
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+    width: 900px;
+    min-height: 800px;
+
+    z-index: 2;
+
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+
+    user-select: none;
+}
+
+#endGame{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 900px;
+    min-height: 800px;
+
+    z-index: 1;
+
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    user-select: none;
+    transition: all 250ms ease;
+}
+
+.end-game-color{
+    background-color: #2a3131;
+}
+
+#message{
+    color: white;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+#restart{
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #94d10f;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    transition: all 250ms ease;
+}
+
+#restart:hover{
+    font-weight: 1000;
+}
+
+#avatarImg{
+
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0.3rem 0.1rem 0.3rem 0.1rem;
+    padding-top: 0.3rem;
+    border: 1px solid #ced4da;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

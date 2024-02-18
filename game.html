@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+
+    <link rel="icon" type="image/x-icon" href="images/avatars/avatar1.png">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/gameStyle.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo/cardLogo.png"></a>
+        <h1>FRUIT CARD GAME</h1>
+    </header>
+    <main>
+        <div id="gameCont">
+            <div id="game">
+            </div>
+            <div id="endGame">
+                <p id="message"></p>
+                <button id="restart">NUEVA PARTIDA</button>
+            </div>
+        </div>
+
+        <div id="userContainer">
+            <form id="entryForm" action="game.html">
+                <div class="itemform">
+                    <img src="source/images/avatars/avatar1.png" width="26" id="avatarImg">
+                    <input type="text" id="nick" value="" readonly>
+                </div>
+
+                <div class="item-form">
+                    <label for="clicks">clicks</label>
+                    <input type="text" id="clicks" name="clicks" value="0" class="inputJuego" readonly>
+                </div>
+
+                <div class="item-form">
+                    <label for="time">tiempo</label>
+                    <input type="text" id="time" name="time" class="inputJuego" readonly>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/userData.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

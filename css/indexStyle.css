@@ -1,0 +1,133 @@
+/*
+* Importing fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+*variables
+*/
+
+:root{
+    --main-color: #94d10f;
+    --better-white: #f2f2f2;
+}
+
+/*reset*/
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+/*
+*
+* GENERAL STYLES
+*
+*/
+
+body{
+    width: 300px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+}
+
+header img{
+    width: 100px;
+}
+
+/*Fonts*/
+body, label, input, select{
+    font-family: 'Nunito', sans-serif;
+}
+
+/*
+*
+* MAIN STYLES
+*
+*/
+
+/*form*/
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/*Inputs and labels*/
+label{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input, select{
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #d8d8d8;
+    font-size: 1rem;
+}
+
+
+/*nickname & dificulty*/
+#nickarr{
+    float: left;
+    width: 40px;
+    text-align: center;
+    background-color: #d8d8d8;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#nick{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 260px;
+}
+
+#dif{
+    width: 100%;
+}
+
+/*Avatar*/
+#avatarContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--better-white);
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+    
+    width: 125px;
+    height: 125px;
+    box-sizing: border-box;
+
+    float: left;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+#avatarContainer img{
+    width: 100%;
+}
+
+
+#avatarOptions{
+    display: flex;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+}
+
+/*Submit*/
+#btnSubmit{
+    width: 100%;
+    padding: 0.5rem;
+    
+    font-size: 1.1rem;
+    color: var(--better-white);
+
+    background-color: var(--main-color);
+    border: 0;
+}
